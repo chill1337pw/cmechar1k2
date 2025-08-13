@@ -110,7 +110,7 @@ async def reminder_cmd(ctx):
         # Одноразовое или повторяющееся
         await ctx.send("Одноразовое или повторяющееся? (one/repeat)")
 msg_type = await bot.wait_for("message", check=lambda m: m.author == ctx.author)
-    repeat_days = None
+repeat_days = None
         if msg_type.content.lower() == "repeat":
             await ctx.send("Введите дни недели (например: mon,wed,fri):")
             days_msg = await bot.wait_for("message", check=lambda m: m.author == ctx.author)
@@ -211,3 +211,4 @@ async def reminder_history(ctx):
 # ------------------------------------------------------
 
 bot.run(TOKEN)
+
