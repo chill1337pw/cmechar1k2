@@ -531,4 +531,5 @@ async def reminder_cmd(ctx: commands.Context):
 
     # Планируем
     schedule_reminder(row)
-    await ctx.send(f"✅ Напоминание создано
+    await ctx.send(f"✅ Напоминание создано")
+
